@@ -9,25 +9,68 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/reset.scss" />
+		<link rel="stylesheet" href="./css/style.scss" />
 		<script src=""></script>
 	</head>
 
 	<body>
 		<!----- ヘッダー ----->
-		<header>header</header>
-		<nav>ナビ</nav>
+		<header class="header flex-box">
+		  <h1 class="site-title">
+		    <a href="./index.html"></a>
+		  </h1>
+		  <nav class="header-nav">
+		    <ul class="nav-list">
+		      <li class="nav-item"><a href=""></a></li>
+		      <li class="nav-item"><a href="">ABOUT US</a></li>
+		      <li class="nav-item"><a href="">WORKS</a></li>
+		      <li class="nav-item"><a href="">CULTURE</a></li>
+		      <li class="nav-item"><a href="">TOPICS</a></li>
+		      <li class="nav-item"><a href="">CONTACT</a></li>
+		    </ul>
+		  </nav>
+		  <button class="burger-btn">
+		    <span class="bars"></span>
+		    <span class="menu">menu</span>
+		  </button>
+		</header>
 		<!----- ヘッダー END ----->
 		
 		<!----- メインコンテンツ ----->
-		<article>
-			<h1>タイトル</h1>
-			<section>
-				<h2>タイトル</h2>
-				<p>コンテンツの内容</p>
-			</section>
-		</article>
+		<main>
+		  <!-- fv -->
+		  <div class="fv">
+		    <div class="kv-wrapper">
+		      <div class="copy-wrapper">
+		        <p class="copy-subtext">デザインで人を笑顔にする会社</p>
+		        <p class="copy-company-name">DIGSMILE INC.</p>
+		        <p class="copy-text">
+		          DESIGN<br>
+		          FOR<br>
+		          SMILE.
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- //fv -->
+		  <!-- about -->
+		  <div class="section-wrapper">
+		    <div class="content-wrapper">
+		      <h2>ABOUT US</h2>
+		      <p>
+		      DIGSMILEは、デザインで人を笑顔にする会社。<br>
+		      なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+          DIGSMILEの社名にはそんな想いが込められています。
+          </p>
+          <a href="" class="">READ MORE</a>
+		    </div>
+		  </div>
+		  <!-- //about -->
+
+		<main>
 		<!----- メインコンテンツ END ----->
 		
 		<!----- フッター ----->
