@@ -2,6 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"
 		<title>DIGSMILE inc.</title>
 		<meta name="description" content="デザインで人を笑顔にする会社 DIGSMILE INC">
 		<link rel="stylesheet" href="sample.css">
@@ -11,20 +12,22 @@
 		<![endif]-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./css/reset.scss" />
-		<link rel="stylesheet" href="./css/style.scss" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<script src=""></script>
 	</head>
 
 	<body>
-		<!----- ヘッダー ----->
+		<!----- header ----->
 		<header class="header flex-box">
 		  <h1 class="site-title">
-		    <a href="./index.html"></a>
+		    <a href="./index.html">
+		    	<svg xmlns="http://www.w3.org/1999/xhtml" width="260" height="28.204" viewBox="0 0 260 28.204"></svg>
+		    </a>
 		  </h1>
 		  <nav class="header-nav">
 		    <ul class="nav-list">
-		      <li class="nav-item"><a href=""></a></li>
+		      <li class="nav-item"><a href="./"></a><img src="./images/site-logo.png" alt="DIGSMILE INC."></img></li>
 		      <li class="nav-item"><a href="">ABOUT US</a></li>
 		      <li class="nav-item"><a href="">WORKS</a></li>
 		      <li class="nav-item"><a href="">CULTURE</a></li>
@@ -33,21 +36,25 @@
 		    </ul>
 		  </nav>
 		  <button class="burger-btn">
-		    <span class="bars"></span>
+		    <span class="bars">
+		    	<span class="bar bar-top"></span>
+		    	<span class="bar bar-mid"></span>
+		    	<span class="bar bar-bottom"></span>
+		    </span>
 		    <span class="menu">menu</span>
 		  </button>
 		</header>
-		<!----- ヘッダー END ----->
+		<!----- header END ----->
 		
-		<!----- メインコンテンツ ----->
+		<!----- main ----->
 		<main>
 		  <!-- fv -->
 		  <div class="fv">
 		    <div class="kv-wrapper">
 		      <div class="copy-wrapper">
-		        <p class="copy-subtext">デザインで人を笑顔にする会社</p>
-		        <p class="copy-company-name">DIGSMILE INC.</p>
-		        <p class="copy-text">
+		        <p class="copy_jp">デザインで人を笑顔にする会社</p>
+		        <p class="copy_company">DIGSMILE INC.</p>
+		        <p class="main-copy">
 		          DESIGN<br>
 		          FOR<br>
 		          SMILE.
@@ -55,26 +62,102 @@
 		      </div>
 		    </div>
 		  </div>
-		  <!-- //fv -->
+		  <!-- fv END -->
 		  <!-- about -->
-		  <div class="section-wrapper">
-		    <div class="content-wrapper">
-		      <h2>ABOUT US</h2>
-		      <p>
+		  <section class="section-wrapper">
+		    <div class="content-wrapper about-bg">
+		    	<div class="about-content">
+		      	<h2 class="section-title">ABOUT US</h2>
+		      	<p class="section-text lines">
 		      DIGSMILEは、デザインで人を笑顔にする会社。<br>
 		      なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
           DIGSMILEの社名にはそんな想いが込められています。
-          </p>
-          <a href="" class="">READ MORE</a>
+          	</p>
+          	<a href="./about/" class="link-btn">READ MORE</a>
+          </div>
 		    </div>
-		  </div>
-		  <!-- //about -->
-
+		  </section>
+		  <!-- about END -->
+		  <!-- works culture-->
+		  <section class="gray-bg l-section-wrapper">
+		  	<div class="flex-box l-content-wrapper">
+		  		<!-- works -->
+		  		<section class="s-section-wrapper">
+		  			<div class="s-content-wrapper">
+		  				<h2 class="section-title">WORKS</h2>
+		  				<div class="section-img-wrapper">
+		  					<img src="./images/works-img.png" alt="ワークスイメージ"></img>
+		  				</div>
+		  				<p>DIGSMILEの制作実績を紹介します</p>
+		  				<a href="" class="btn">READ MORE</a>
+		  			</div>
+		  		</section>
+		  		<!-- works END -->
+		  		<!-- culture -->
+		  		<section class="s-section-wrapper">
+		  			<div class="s-content-wrapper">
+		  				<h2 class="section-title">CULTURE</h2>
+		  				<div class="section-img-wrapper">
+		  					<img src="./images/culture-img.png" alt="カルチャーイメージ"></img>
+		  				</div>
+		  				<p>DIGSMILEの社内文化について紹介します</p>
+		  				<a href="" class="link-btn">READ MORE</a>
+		  			</div>
+		  		</section>
+		  		<!-- culture END -->
+		  	</div>
+		  </section>
+		  <!-- works culture END -->
+		  <!-- topics -->
+		  <section class="section-wrapper">
+		  	<div class="content-wrapper">
+		  		<h2 class="section-title">LATEST TOPICS</h2>
+		  		<ul class="topics-list ml-auto">
+		  			<li class="topics-item">
+		  				<a href="">
+		  					<time class="topics-date">2020.02.01</time>
+		  					<h3>イベントレポート「VRクリエイター座談会〜５Gの次に来るもの〜」</h3>
+		  				</a>
+		  			</li>
+		  			<li class="topics-item">
+		  				<a href="">
+		  					<time class="topics-date">2020.01.18</time>
+		  					<h3>プレスリリースのお知らせ　DIGGIN'RECORD</h3>
+		  				</a>
+		  			</li>
+		  			<li class="topics-item">
+		  				<a href="">
+		  					<time class="topics-date">2020.01.01</time>
+		  					<h3>新年明けましておめでとうございます</h3>
+		  				</a>
+		  			</li>
+		  		</ul>
+		  	<a href="" class="link-btn ml-auto">READ MORE</a>
+		  	</div>
+		  </section>
+		  <!-- topics END -->
+		  <!-- contact -->
+		  <section class="section-wrapper gray-bg">
+		  	<div class="content-wrapper flex-box">
+		  		<div class="contact-content">
+		  		 <h2 class="section-title">CONTACT</h2>
+		  		<p class="contact-text lines">
+		  		制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
+		  		まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+		  		<a href="./contact/" class="link-btn">READ MORE</a>
+		  		</div>
+		  		<div class="contact-img-wrapper">
+		  			<img src="./images/recruit-img.png" alt="リクルートイメージ"></img>
+		  		</div>
+		  	</div>
+		  </section>
+		  <!-- contact END -->
 		<main>
-		<!----- メインコンテンツ END ----->
-		
-		<!----- フッター ----->
-		<footer>フッター</footer>
-		<!----- フッター END ----->
+		<!----- main END ----->
+		<!----- footer ----->
+		<footer>
+			<small>&copy:2018 DIGSMILE INC.</small>
+		</footer>
+		<!----- footer END ----->
 	</body>
 </html>

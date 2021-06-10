@@ -1,34 +1,4 @@
-/*
-Error: Invalid CSS after "...JP', sans-serif": expected "{", was ";"
-        on line 1 of style.scss
+h2 {
+  color: red; }
 
-1: font-family: 'Noto Sans JP', sans-serif;
-
-Backtrace:
-style.scss:1
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/sass:23:in `load'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/sass:23:in `<main>'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'
-/home/ubuntu/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...JP', sans-serif\": expected \"{\", was \";\"\A         on line 1 of style.scss\A \A 1: font-family: 'Noto Sans JP', sans-serif;"; }
+/*# sourceMappingURL=style.css.map */
