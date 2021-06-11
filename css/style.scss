@@ -5,15 +5,16 @@ html{
 body{
   margin: 0;
   font-size: 1.6rem;
-  font-family: 'Montserrat','Noto Sans JP',sans-serif;
-  color: #333333;
   p{
     margin: 0;
+    font-family:'Noto Sans JP',sans-serif;
   }
+
 }
 
 a{
   text-decoration: none;
+  font-family:'Noto Sans JP',sans-serif;
   &:hover{
     opacity: 0.7;
     transition: 0.3s;
@@ -24,6 +25,25 @@ button{
   background-color: transparent;
   appearance: none;
   border: none;
+}
+
+/*font*/
+h2{
+  font-size: 3.2rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 0;
+}
+
+/*btn*/
+.link-btn{
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: medium;
+  padding: 13px 44px;
+  line-height: 32px;
 }
 
 
@@ -47,6 +67,7 @@ button{
     transition: 0.3s;
   }
   .menu{
+    font-family: 'Montserrat';
     font-size: 1rem;
     font-weight: bold;
     margin-left: 5px;
@@ -89,14 +110,53 @@ button{
   transform: translate(50%,-50%);
   .copy-jp{
     font-size: 2rem;
+    font-family: '游ゴシック';
   }
   .copy-company{
+    font-family: 'Montserrat';
+    font-weight: medium;
     font-size: 2rem;
   }
   .main-copy{
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 7.2rem;
     line-height: 8.6rem;
   }
 }
 
-/*about*/
+/*section-about*/
+.section-wrapper:first-of-type{
+  padding-top: 120px;
+  position: relative;
+  .about-bg{
+    background-image: url("../images/about-img.png");
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0 110px 50px;
+    width: 1100px;
+    margin: auto;
+  }
+  .about-content{
+    background-color: #fff;
+    padding: 50px 30px 65px 30px;
+    max-width: 590px;
+    p{
+      line-height: 2.3rem;
+      padding: 29px 0 40px 0;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*section-works gray-bg*/
+.section-wrapper:first-of-type::after{
+  content: "";
+  width: 100vw;
+  height: 100px;
+  background-color: #f2f2f2;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
