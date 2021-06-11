@@ -1,4 +1,90 @@
-h2 {
-  color: red; }
+@charset "UTF-8";
+html {
+  /* font-sizeは16pxの62.5%の10px */ }
+  html html {
+    font-size: 62.5%; }
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Montserrat','Noto Sans JP',sans-serif;
+  color: #333333; }
+  body p {
+    margin: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    opacity: 0.7;
+    transition: 0.3s; }
+
+button {
+  background-color: transparent;
+  appearance: none;
+  border: none; }
+
+/*header title navi*/
+.site-title {
+  position: fixed;
+  top: 38px;
+  left: 4vw;
+  z-index: 1; }
+
+.burger-btn {
+  position: fixed;
+  top: 38px;
+  right: 4vw;
+  z-index: 1;
+  cursor: pointer;
+  color: #fff; }
+  .burger-btn:hover {
+    opacity: 0.7;
+    transition: 0.3s; }
+  .burger-btn .menu {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5px; }
+
+.header-nav {
+  display: none; }
+
+/*key visual*/
+.fv {
+  height: 100vh; }
+
+.fv::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222222;
+  width: 54.2%;
+  height: 100%;
+  z-index: -1; }
+
+.kv-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/kv-img.png");
+  width: 76.4%;
+  height: 86.5%; }
+
+.copy-wrapper {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%); }
+  .copy-wrapper .copy-jp {
+    font-size: 2rem; }
+  .copy-wrapper .copy-company {
+    font-size: 2rem; }
+  .copy-wrapper .main-copy {
+    font-size: 7.2rem;
+    line-height: 8.6rem; }
+
+/*about*/
 
 /*# sourceMappingURL=style.css.map */
