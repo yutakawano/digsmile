@@ -23,6 +23,10 @@ button {
   appearance: none;
   border: none; }
 
+/*section-works-bg*/
+.gray-bg {
+  background-color: #f2f2f2; }
+
 /*font*/
 h2 {
   font-size: 3.2rem;
@@ -122,7 +126,8 @@ h2 {
   .section-wrapper:first-of-type .about-content {
     background-color: #fff;
     padding: 50px 30px 65px 30px;
-    max-width: 590px; }
+    max-width: 590px;
+    box-sizing: content-box; }
     .section-wrapper:first-of-type .about-content p {
       line-height: 2.3rem;
       padding: 29px 0 40px 0;
@@ -138,5 +143,19 @@ h2 {
   position: absolute;
   bottom: 0;
   z-index: -1; }
+
+.l-content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box; }
+  .l-content-wrapper h2 {
+    margin: 80px 0 30px 0; }
+  .l-content-wrapper p {
+    font-size: 1rem;
+    font-family: "游ゴシック";
+    margin: 20px 0 30px 0; }
 
 /*# sourceMappingURL=style.css.map */

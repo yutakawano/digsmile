@@ -26,6 +26,10 @@ button{
   appearance: none;
   border: none;
 }
+/*section-works-bg*/
+.gray-bg{
+  background-color: #f2f2f2;
+}
 
 /*font*/
 h2{
@@ -141,6 +145,7 @@ h2{
     background-color: #fff;
     padding: 50px 30px 65px 30px;
     max-width: 590px;
+    box-sizing: content-box;
     p{
       line-height: 2.3rem;
       padding: 29px 0 40px 0;
@@ -159,4 +164,21 @@ h2{
   position: absolute;
   bottom: 0;
   z-index: -1;
+}
+
+.l-content-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  h2{
+    margin: 80px 0 30px 0;
+  }
+  p{
+    font-size: 1rem;
+    font-family: "游ゴシック";
+    margin: 20px 0 30px 0;
+  }
 }
