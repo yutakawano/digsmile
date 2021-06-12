@@ -20,7 +20,9 @@ a{
     transition: 0.3s;
   }
 }
-
+dl,dt,dd{
+  margin: 0;
+}
 button{
   background-color: transparent;
   appearance: none;
@@ -137,17 +139,20 @@ p{
   .copy-jp{
     font-size: 20px;
     font-family: '游ゴシック';
+    color: #fff;
   }
   .copy-company{
     font-family: 'Montserrat';
     font-weight: medium;
     font-size: 20px;
+    color: #fff;
   }
   .main-copy{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 72px;
     line-height: 86px;
+    color: #fff;
   }
 }
 
@@ -284,9 +289,9 @@ footer{
     }
   }
 }
-/*ceo-message-page*/
+/*about-ceo-message*/
 .section-wrapper-about-message{
-
+  padding-bottom: 120px;
   .section-content-about-message{
     max-width: 1100px;
     height: 800px;
@@ -313,5 +318,49 @@ footer{
         font-weight: bold;
       }
     }
+  }
+}
+
+/*about-campany*/
+.section-wrapper-about-company{
+  .section-content-about-company{
+    max-width: 1100px;
+    margin: auto;
+    h2{
+      display: block;
+      font-size: 32px;
+      border-bottom: 1px solid #DDDDDD;
+      padding-bottom: 30px;
+    }
+    .campany-info{
+      padding-bottom: 40px;
+      padding-left: 25%;
+    }
+    .campany-list{
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid #DDDDDD;
+    }
+    dt{
+      font-size: 16px;
+      font-family: "游ゴシック";
+      font-weight: bold;
+      color: #333333;
+      width: 144px;
+    }
+    dd{
+      font-size: 16px;
+      font-family: "游ゴシック";
+      color: #333333;
+    }
+  }
+}
+
+.iframe-wrap{
+  padding: 0 0 120px 0;
+  iframe{
+    display: block;
+    width: 100%;
+    margin: auto;
   }
 }

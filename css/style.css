@@ -18,6 +18,9 @@ a {
     opacity: 0.7;
     transition: 0.3s; }
 
+dl, dt, dd {
+  margin: 0; }
+
 button {
   background-color: transparent;
   appearance: none;
@@ -119,16 +122,19 @@ p {
   transform: translate(50%, -50%); }
   .copy-wrapper .copy-jp {
     font-size: 20px;
-    font-family: '游ゴシック'; }
+    font-family: '游ゴシック';
+    color: #fff; }
   .copy-wrapper .copy-company {
     font-family: 'Montserrat';
     font-weight: medium;
-    font-size: 20px; }
+    font-size: 20px;
+    color: #fff; }
   .copy-wrapper .main-copy {
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 72px;
-    line-height: 86px; }
+    line-height: 86px;
+    color: #fff; }
 
 /*section-about*/
 .section-wrapper:first-of-type {
@@ -237,28 +243,64 @@ footer {
       font-size: 16px;
       font-family: 'Noto Sans JP',sans-serif; }
 
-/*ceo-message-page*/
-.section-wrapper-about-message .section-content-about-message {
+/*about-ceo-message*/
+.section-wrapper-about-message {
+  padding-bottom: 120px; }
+  .section-wrapper-about-message .section-content-about-message {
+    max-width: 1100px;
+    height: 800px;
+    margin: auto;
+    position: relative; }
+    .section-wrapper-about-message .section-content-about-message .ceo-img {
+      position: absolute; }
+    .section-wrapper-about-message .section-content-about-message .ceo-message {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #F0F0F0;
+      width: 400px;
+      padding: 90px 185px 90px 185px;
+      z-index: -1; }
+      .section-wrapper-about-message .section-content-about-message .ceo-message h2 {
+        font-size: 32px;
+        margin-bottom: 30px; }
+      .section-wrapper-about-message .section-content-about-message .ceo-message p {
+        font-size: 16px;
+        font-family: 'Noto Sans JP',sans-serif;
+        font-weight: bold; }
+
+/*about-campany*/
+.section-wrapper-about-company .section-content-about-company {
   max-width: 1100px;
-  height: 800px;
-  margin: auto;
-  position: relative; }
-  .section-wrapper-about-message .section-content-about-message .ceo-img {
-    position: absolute; }
-  .section-wrapper-about-message .section-content-about-message .ceo-message {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #F0F0F0;
-    width: 400px;
-    padding: 90px 185px 90px 185px;
-    z-index: -1; }
-    .section-wrapper-about-message .section-content-about-message .ceo-message h2 {
-      font-size: 32px;
-      margin-bottom: 30px; }
-    .section-wrapper-about-message .section-content-about-message .ceo-message p {
-      font-size: 16px;
-      font-family: 'Noto Sans JP',sans-serif;
-      font-weight: bold; }
+  margin: auto; }
+  .section-wrapper-about-company .section-content-about-company h2 {
+    display: block;
+    font-size: 32px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 30px; }
+  .section-wrapper-about-company .section-content-about-company .campany-info {
+    padding-bottom: 40px;
+    padding-left: 25%; }
+  .section-wrapper-about-company .section-content-about-company .campany-list {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #DDDDDD; }
+  .section-wrapper-about-company .section-content-about-company dt {
+    font-size: 16px;
+    font-family: "游ゴシック";
+    font-weight: bold;
+    color: #333333;
+    width: 144px; }
+  .section-wrapper-about-company .section-content-about-company dd {
+    font-size: 16px;
+    font-family: "游ゴシック";
+    color: #333333; }
+
+.iframe-wrap {
+  padding: 0 0 120px 0; }
+  .iframe-wrap iframe {
+    display: block;
+    width: 100%;
+    margin: auto; }
 
 /*# sourceMappingURL=style.css.map */
