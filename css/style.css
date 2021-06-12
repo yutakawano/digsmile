@@ -89,6 +89,7 @@ h2 {
   height: 100%;
   z-index: -1; }
 
+/*keyvisual*/
 .kv-wrapper {
   position: relative;
   background-size: cover;
@@ -97,6 +98,15 @@ h2 {
   width: 76.4%;
   height: 86.5%; }
 
+.kv-wrapper-about {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/heading-img.png");
+  width: 76.4%;
+  height: 86.5%; }
+
+/*keyvisual*/
 .copy-wrapper {
   color: #fff;
   position: absolute;
