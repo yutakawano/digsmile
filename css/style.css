@@ -36,11 +36,15 @@ h2 {
   font-family: 'Montserrat';
   font-weight: bold;
   margin: 0;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  color: #333333; }
+
+p {
+  color: #333333; }
 
 /*btn*/
 .link-btn {
-  font-size: 1.2rem;
+  font-size: 12px;
   background-color: #000;
   color: #fff;
   font-family: 'Montserrat';
@@ -114,17 +118,17 @@ h2 {
   right: 0;
   transform: translate(50%, -50%); }
   .copy-wrapper .copy-jp {
-    font-size: 2rem;
+    font-size: 20px;
     font-family: '游ゴシック'; }
   .copy-wrapper .copy-company {
     font-family: 'Montserrat';
     font-weight: medium;
-    font-size: 2rem; }
+    font-size: 20px; }
   .copy-wrapper .main-copy {
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 7.2rem;
-    line-height: 8.6rem; }
+    font-size: 72px;
+    line-height: 86px; }
 
 /*section-about*/
 .section-wrapper:first-of-type {
@@ -180,10 +184,10 @@ h2 {
   display: flex;
   justify-content: space-between; }
   .content-wrapper time {
-    font-size: 1rem;
+    font-size: 10px;
     color: #CECECE; }
   .content-wrapper h3 {
-    font-size: 1.2rem;
+    font-size: 14px;
     color: #333333;
     border-bottom: 1px solid #CECECE;
     padding-bottom: 12px; }
@@ -210,10 +214,51 @@ h2 {
 footer {
   background-color: #333333;
   color: #fff;
-  font-size: 1rem;
+  font-size: 10px;
   font-family: 'Montserrat';
   font-weight: lighter;
   text-align: center;
   padding: 20px; }
+
+/*about-page*/
+.section-wrapper-about-vision {
+  padding: 120px 0; }
+  .section-wrapper-about-vision .content-wrapper-about-vision {
+    padding: 0 0 0 27.5%;
+    width: 28.8vw; }
+    .section-wrapper-about-vision .content-wrapper-about-vision .vision-content h2 {
+      margin-bottom: 30px; }
+    .section-wrapper-about-vision .content-wrapper-about-vision .vision-content .section-subtitle-vision {
+      font-size: 24px;
+      font-family: "游ゴシック";
+      font-weight: bold;
+      margin-bottom: 30px; }
+    .section-wrapper-about-vision .content-wrapper-about-vision .vision-content .section-text-vision {
+      font-size: 16px;
+      font-family: 'Noto Sans JP',sans-serif; }
+
+/*ceo-message-page*/
+.section-wrapper-about-message .section-content-about-message {
+  max-width: 1100px;
+  height: 800px;
+  margin: auto;
+  position: relative; }
+  .section-wrapper-about-message .section-content-about-message .ceo-img {
+    position: absolute; }
+  .section-wrapper-about-message .section-content-about-message .ceo-message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #F0F0F0;
+    width: 400px;
+    padding: 90px 185px 90px 185px;
+    z-index: -1; }
+    .section-wrapper-about-message .section-content-about-message .ceo-message h2 {
+      font-size: 32px;
+      margin-bottom: 30px; }
+    .section-wrapper-about-message .section-content-about-message .ceo-message p {
+      font-size: 16px;
+      font-family: 'Noto Sans JP',sans-serif;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
