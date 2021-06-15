@@ -40,7 +40,7 @@ ul{
 
 /*font*/
 h2{
-  font-size: 3.2rem;
+  font-size: 32px;
   font-family: 'Montserrat';
   font-weight: bold;
   margin: 0;
@@ -128,6 +128,15 @@ p{
   width: 76.4%;
   height: 86.5%;
 }
+.kv-wrapper-contact{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/heading-img_contact.png");
+  width: 76.4%;
+  height: 86.5%;
+}
+
 /*keyvisual*/
 
 .copy-wrapper{
@@ -216,7 +225,7 @@ p{
   margin: auto;
   padding: 60px 0 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   time{
     font-size: 10px;
     color: #CECECE;
@@ -265,7 +274,7 @@ footer{
   padding: 20px;
 }
 
-/*about-page*/
+/*about-vision-page*/
 .section-wrapper-about-vision{
   padding: 120px 0;
   .content-wrapper-about-vision{
@@ -362,5 +371,26 @@ footer{
     display: block;
     width: 100%;
     margin: auto;
+  }
+}
+/*contact*/
+.contact-section-wrapper{
+  max-width: 680px;
+  margin: auto;
+  .contact-discription{
+    font-size: 16px;
+    font-family: 'Noto Sans JP',sans-serif;
+    display: block;
+    margin: auto;
+    padding: 120px 0 55px 0;
+  }
+  h4{
+    font-size: 16px;
+    font-family: 'Noto Sans JP',sans-serif;
+  }
+  .policy-title{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: bold;
   }
 }
