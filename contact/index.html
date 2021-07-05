@@ -55,61 +55,40 @@
           <div class="form-content">
             <ul>
               <li class="form-items">
-                <h4>お問い合わせ種別</h4>
-                <p>
+                <h4>お問い合わせ種別　<span>必須</span></h4>
                   <input type="radio" name="seisakuirai" value=""/>
-                  制作依頼
+                  <span>制作依頼</span>
                   <input type="radio" name="seisakuirai" value=""/>
-                  採用
+                  <span>採用</span>
                   <input type="radio" name="seisakuirai" value=""/>
-                  IR
+                  <span>IR</span>
                   <input type="radio" name="seisakuirai" value=""/>
-                  その他
-                </p>
+                  <span>その他</span>
               </li>
               <li class="form-items">
                 <h4>会社名・団体名</h4>
-                <form>
-                <p>
-                  <input type="text" name="name"/>
-                </p>
-                </form>
+                  <input class="input-txt" type="text" name="name"/>
               </li>
               <li class="form-items">
-                <h4>お名前</h4>
-                <form>
-                <p>
-                  <input type="text" name="name"/>
-                </p>
-                </form>
+                <h4>お名前　<span>必須</span></h4>
+                  <input class="input-txt" type="text" name="name"/>
               </li>
               <li class="form-items">
-                <h4>メールアドレス</h4>
-                <form>
-                <p>
-                  <input type="text" name="mailaddress"/>
-                </p>
-                </form>
+                <h4>メールアドレス　<span>必須</span></h4>
+                  <input class="input-txt" type="text" name="mailaddress"/>
               </li>
               <li class="form-items">
                 <h4>電話番号</h4>
-                <form>
-                <p>
-                  <input type="text" name="tel"/>
-                </p>
-                </form>
+                  <input class="input-txt" type="text" name="tel"/>
               </li>
               <li class="form-items">
-                <h4>お問い合わせ内容</h4>
-                <form>
-                <textarea>
+                <h4>お問い合わせ内容　<span>必須</span></h4>
+                <textarea class="input-txt contact-txt">
                 </textarea>
-                </form>
               </li>
               <li class="form-items">
                 <h4 class="policy-title">PRIVACY POLICY</h4>
-                <form>
-                <textarea>
+                <textarea  class="input-txt privacy-txt">
                 個人情報保護方針
                 株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
 
@@ -136,14 +115,15 @@
                 株式会社ファイアープレイス
                 044-589-4333
                 </textarea>
-                </form>
               </li>
             </ul>
           </div>
         </section>
-        <p class="agree">
-        個人情報の取り扱いについて同意のうえ送信します。
-        </p>
+        <div class="checkbox-wrapper">
+          <input class="checkbox" type="checkbox">
+            <span class="checkbox-txt">個人情報の取り扱いについて同意のうえ送信します。</span>
+          </input>
+        </div>
         <a href="#" class="link-btn">送信</a>
       </div>
     </main>
