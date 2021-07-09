@@ -95,7 +95,22 @@ p{
 }
 
 /*key visual*/
+.fv-top{
+  height: 100vh;
+}
+.fv-top::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222222;
+  width: 54.2%;
+  height: 100%;
+  z-index: -1;
+}
 
+/*key visual about contact*/
 .fv{
   height: 100vh;
 }
@@ -174,8 +189,9 @@ p{
     background-size: cover;
     background-position: center;
     padding: 110px 0 110px 50px;
-    width: 1100px;
-    margin: auto;
+    width: 87%;
+    max-width: 1100px;
+    margin: 0 auto;
   }
   .about-content{
     background-color: #fff;
@@ -193,7 +209,7 @@ p{
 /*works gray-bg*/
 .section-wrapper:first-of-type::after{
   content: "";
-  width: 100vw;
+  width: 100VW;
   height: 160px;
   background-color: #f2f2f2;
   display: block;
@@ -375,6 +391,7 @@ footer{
 }
 /*contact*/
 .contact-section-wrapper{
+  width: 92%;
   max-width: 680px;
   margin: auto;
   .contact-discription{
@@ -382,7 +399,7 @@ footer{
     font-family: 'Noto Sans JP',sans-serif;
     display: block;
     margin: auto;
-    padding: 120px 0 55px 0;
+    padding: 120px 0 0 0;
   }
   h4{
     font-size: 16px;
@@ -401,6 +418,14 @@ footer{
     font-size: 16px;
     margin-right: 50px;
     color: #333333;
+  }
+}
+.contact-form{
+  ul{
+    padding-left: 0;
+  }
+  .form-items-lists{
+    display: flex;
   }
 }
 .contact-form h4{
@@ -447,3 +472,261 @@ footer{
   font-size: 16px;
 }
 
+
+/*TOPのレスポンシブ対応*/
+.contact-img-wrapper-first{
+  display: none;
+}
+
+/*共通*/
+@media screen and (max-width: 1200px){
+.copy-wrapper{
+  right: 15%;
+}
+.copy-wrapper .main-copy {
+  font-size: 56px;
+}
+.copy-wrapper .copy-jp {
+  font-size: 16px;
+}
+
+}
+/*共通*/
+@media screen and (max-width: 768px){
+  .site-title{
+    top: 10px;
+    left: 20px;
+    img{
+      width: 189px;
+      height: auto;
+    }
+  }
+}
+
+
+
+/*topレスポンシブ*/
+@media screen and (max-width: 1200px) {
+.section-wrapper:first-of-type{
+  padding: 80px 0 0 0;
+}
+.section-wrapper:first-of-type::after{
+  display: none;
+}
+.section-wrapper:first-of-type .about-content{
+  margin: auto;
+  p{
+    font-size: 16px;
+  }
+}
+.section-wrapper:first-of-type .about-bg{
+  padding: 60px 0 60px 0;
+  width: 100%;
+}
+.l-content-wrapper{
+  display: block;
+  width: 92%;
+}
+.l-content-wrapper h2{
+  padding-top: 60px;
+  margin-top: 0;
+}
+/*link-btn*/
+.section-wrapper:first-of-type {
+  .link-btn{
+    margin: 0;
+  }
+}
+.l-content-wrapper{
+  .link-btn{
+    margin: 0;
+  }
+}
+.section-wrapper{
+  .link-btn{
+    margin: 0;
+  }
+}
+
+
+.content-wrapper{
+  width: 92%;
+  padding-bottom: 0;
+  display: block;
+}
+.topics-list{
+  padding: 0;
+  margin: 32px 0 0 0;
+}
+.content-wrapper .topics-list{
+  margin-top: 30px;
+}
+.content-wrapper .topics-btn{
+  float: none;
+}
+.section-wrapper .content-wrapper .contact-content h2{
+  margin-top: 0;
+}
+.contact-img-wrapper{
+  display: none;
+}
+.contact-img-wrapper-first{
+  display: block;
+}
+.section-wrapper .content-wrapper .contact-content h2{
+  margin-top: 30px;
+}
+.section-wrapper{
+  padding-bottom: 80px;
+}
+.section-wrapper .content-wrapper .contact-content {
+    padding-right: 0;
+    max-width: 550px;
+}
+
+}
+
+
+@media screen and (max-width: 680px) {
+.copy-wrapper{
+  right: 30%;
+}
+.section-wrapper:first-of-type .about-content{
+  width: 80%;
+}
+.l-content-wrapper{
+  width: 92%;
+}
+.section-img-wrapper{
+  img{
+    width: 100%;
+  }
+}
+.contact-img-wrapper-first{
+  img{
+    width: 100%;
+  }
+}
+.section-wrapper .content-wrapper .contact-content{
+  padding-right: 0;
+}
+
+}
+
+
+/*ABOUTレスポンシブ対応*/
+@media screen and (max-width: 1200px){
+.section-wrapper-about-vision .content-wrapper-about-vision {
+  padding: 0;
+  width: 50vw;
+  margin: auto;
+}
+.section-wrapper-about-message .section-content-about-message {
+    max-width: 92%;
+    height: 800px;
+    margin: auto;
+}
+.section-wrapper-about-message .section-content-about-message .ceo-message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #F0F0F0;
+    width: 494px;
+    padding: 90px 40px 90px 40px;
+    z-index: -1;
+}
+.ceo-img{
+  img{
+    width: 92%;
+  }
+}
+.section-wrapper-about-company .section-content-about-company {
+  width: 92%;
+}
+.section-wrapper-about-company .section-content-about-company .campany-info {
+  padding-left: 5%;
+}
+
+
+}
+
+
+@media screen and (max-width: 768px){
+.kv-wrapper-about{
+  .copy-wrapper {
+    width: 350px;
+  }
+}
+.section-wrapper-about-vision .content-wrapper-about-vision {
+    padding: 0 10% 0 10%;
+    width: 80%;
+    margin: 0;
+}
+.ceo-img{
+  img{
+
+  }
+}
+.section-wrapper-about-message .section-content-about-message .ceo-message{
+  .message-text{
+    font-size: 14px;
+  }
+}
+.section-wrapper-about-message .section-content-about-message .ceo-message {
+  width: 300px;
+  bottom: -20px;
+}
+
+
+}
+
+
+@media screen and (max-width: 420px){
+.section-wrapper-about-vision .content-wrapper-about-vision {
+    padding: 0 4% 0 4%;
+    width: 92%;
+    margin: 0;
+}
+.section-wrapper-about-message .section-content-about-message .ceo-message {
+  padding: 90px 20px 90px 20px;
+}
+.section-wrapper-about-company .section-content-about-company dd {
+  font-size: 14px;
+}
+
+}
+
+@media screen and (max-width: 375px){
+.section-wrapper-about-message .section-content-about-message .ceo-message {
+  width: 280px;
+}
+}
+
+
+/*CONTACTレスポンシブ対応*/
+@media screen and (max-width: 768px){
+.kv-wrapper-contact{
+  height: 529px;
+}
+.fv{
+  height: 60vh;
+}
+.fv::after{
+  height: 615px;
+}
+.contact-form .form-items-lists{
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 420px){
+.kv-wrapper-contact{
+  height: 270px;
+}
+.fv{
+  height: 35vh;
+}
+.fv::after{
+  height: 365px;
+}
+
+}
